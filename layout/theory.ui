@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Теоретические расчёты</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Входные данные</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="p_edit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>Плотность</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="v_edit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>Скорость</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="s_edit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>60</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>Площадь крыла</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Подъёмная сила</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="c_y_edit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>K подъёмной силы</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>120</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Сила сопротивления воздуха</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="c_x_edit">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>160</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>K лобового сопротивления</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="find_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Расчёт</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="find_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>200</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Расчёт</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Число Рейнольдса</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="th_edit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>Скорость потока</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="hord_edit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>300</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>Хорда крыла</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="m_edit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>300</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="placeholderText">
+     <string>Вязкость</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="find_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>441</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Расчёт</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="res_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>471</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>520</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
